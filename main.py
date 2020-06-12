@@ -9,7 +9,7 @@ print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ
 print("het woord heeft " + str(lengtewoord) + " letters")
 
 while True: #woord wordt geraden
-  userguess = (input(": "))
+  userguess = (input("Jouw gok: "))
   match = re.search(userguess, woord)
   if userguess == woord
     print("je hebt het woord" + "'" + woord = "'" + "geraden")
