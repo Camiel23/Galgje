@@ -5,5 +5,5 @@ woordenlijst = ["informatica", "informatiekunde", "spelletje", "aardigheidje", "
 woord = random.choice(woordenlijst)
 lengtewoord = len(woord)
 
-print("intro-bericht")
+print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ het woord helemaal om te winnen. Succes en veel plezier!")
 print("het woord heeft " + str(lengtewoord) + " letters")
