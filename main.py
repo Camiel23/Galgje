@@ -1,3 +1,6 @@
+import re
+import random
+
 woordenlijst = ["informatica", "informatiekunde", "spelletje", "aardigheidje", "scholier", "fotografie", "waardebepaling", "specialiteit", "verzekering", "universiteit", "heesterperk"]
 woord = random.choice(woordenlijst)
 lengtewoord = len(woord)
