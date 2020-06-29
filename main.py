@@ -8,7 +8,7 @@ lengtewoord = len(woord)
 print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ het woord helemaal om te winnen. Succes en veel plezier!")
 print("het woord heeft " + str(lengtewoord) + " letters")
 
-print         "_________"
+        print "_________"
 				print "|	 |"
 				print "|	 O"
 				print "|"
