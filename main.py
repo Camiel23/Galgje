@@ -28,7 +28,7 @@ while turns > 0:
   if guess not in woord:
     turns = turns - 1
     print("Jammer, fout...")
-    print("Je hebt nog" + turns + "gokkansen over.")
+    print("Je hebt nog" + turns + "gokkansen over")
     
     if turns == 5:
       print ("_________")
