@@ -15,72 +15,25 @@ turns = 5
 
 while turns > 0:
   verkeerd = 0
+  guess = input("Raad een letter: ")
+  
   for letter in woord:
       if letter in guess:
         print (letter)
       else: 
-        print("_")
+        print("-")
         verkeerd = verkeerd + 1
-  if failed == 0:
-    print("Gefeliciteerd, je hebt in" + str(guesses) + "gewonnen!")
-  guess = input("Raad een letter: ")
+  
+  if verkeerd == 0:
+    print("Gefeliciteerd, je hebt gewonnen!")
+    break
+  
   guesses = guesses + guess
   if guess not in woord:
     turns = turns - 1
     print("Jammer, fout...")
-    print("Je hebt nog" + turns + "gokkansen over")
+    print("Je hebt nog " + str(turns) + " gokkansen over")
     
-    if turns == 5:
-      print ("_________")
-      print ("|	 |")
-      print ("|	 O")
-      print ("|")
-      print ("|")
-      print ("|")
-      print ("|________")
-    if turns == 4:
-      print ("_________")
-	    print ("|  |")
-	    print ("|	 O")
-	    print ("|	 |")
-	    print ("|	 |")
-	    print ("|")
-	    print ("|________")
-
-    if turns == 3:
-    	print ("_________")
-			print ("|	 |")
-			print ("|	 O")
-			print ("|	\|")
-  		print ("|	 |")
-			print ("|")
-			print ("|________")
-
-    if turns == 2:
-    	print ("_________")
-    	print ("|	 |")
-			print ("|	 O")
-			print ("|	\|/")
-			print ("|	 |")
-			print ("|")
-			print ("|________")
-
-    if turns == 1:
-      print ("_________")
-			print ("|	 |")
-			print ("|	 O")
-			print ("|	\|/")
-			print ("|	 |")
-			print ("|	/ ")
-			print ("|________")
-
     if turns == 0:
-      print ("_________")
-			print ("|	 |")
-			print ("|	 O")
-			print ("|	\|/")
-			print ("|	 |")
-			print ("|	/ \ ")
-			print ("|________") 
-      print("Helaas, je hebt verloren. Het woord was:" + woord )
+      print("Helaas, je hebt verloren. Het woord was: " + woord )
 
