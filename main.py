@@ -38,7 +38,7 @@ while turns > 0:
     verkeerde_letters.append(guess)
     print("Jammer, fout...")
     print("Je hebt nog " + str(turns) + " gokkansen over")
-    print("Je fout geraden letters zijn nu: " + str(verkeerde_letters))
+    print("Je fout geraden letters zijn nu: " + str(sorted(verkeerde_letters)))
     
     if turns == 0:
       print("Helaas, je hebt verloren. Het woord was: " + woord )
