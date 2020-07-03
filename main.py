@@ -5,13 +5,15 @@ woordenlijst = ["informatica", "informatiekunde", "spelletje", "aardigheidje", "
 woord = random.choice(woordenlijst)
 lengtewoord = len(woord)
 
-print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ het woord helemaal om te winnen. Succes en veel plezier!")
+print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ dan het woord helemaal om te winnen. Succes en veel plezier!")
 print("het woord heeft " + str(lengtewoord) + " letters")
 
 
 guesses = ""
 
 turns = 5
+
+verkeerde_letters = []
 
 while turns > 0:
   verkeerd = 0
@@ -31,8 +33,10 @@ while turns > 0:
   guesses = guesses + guess
   if guess not in woord:
     turns = turns - 1
+    verkeerde_letters.append(guess)
     print("Jammer, fout...")
     print("Je hebt nog " + str(turns) + " gokkansen over")
+    print("Je fout geraden letters zijn nu: " + str(verkeerde_letters))
     
     if turns == 0:
       print("Helaas, je hebt verloren. Het woord was: " + woord )
