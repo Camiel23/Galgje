@@ -5,9 +5,11 @@ woordenlijst = ["informatica", "informatiekunde", "spelletje", "aardigheidje", "
 woord = random.choice(woordenlijst)
 lengtewoord = len(woord)
 
-print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ dan het woord helemaal om te winnen. Succes en veel plezier!")
-print("het woord heeft " + str(lengtewoord) + " letters")
+def introductie():
+  print("Hallo, welkom bij galgje! Raad letters en als je het hele woord weet, typ dan het woord helemaal om te winnen. Succes en veel plezier!")
+  print("het woord heeft " + str(lengtewoord) + " letters")
 
+introductie()
 
 guesses = ""
 
